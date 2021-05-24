@@ -6,6 +6,7 @@ The project is a Open Taobao Platform web app with only one api to oauth and get
 
 ```bash
 pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
 ## test
