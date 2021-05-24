@@ -1,0 +1,39 @@
+[tool.pytest.ini_options]
+addopts = " -svv --cov=app"
+filterwarnings = ["ignore::DeprecationWarning"]
+minversion = "6.0"
+testpaths = [
+  "tests",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if __name__ == .__main__.:",
+]
+fail_under = 70.0
+omit = []
+show_missing = true
+skip_covered = true
+skip_empty = true
+sort = "miss"
+
+[tool.coverage.path]
+source = "app"
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.isort]
+include_trailing_comma = true
+line_length = 120
+multi_line_output = 3
+profile = "black"
+src_paths = ["app", "tests"]
+use_parentheses = true
