@@ -14,6 +14,13 @@ pip install -r requirements.txt
 pytest
 ```
 
+## run
+
+```bash
+# set needed environment variables:APP_KEY, APP_SECRET, APP_DOMAIN, REDIRECT
+uvicorn app.main:app
+```
+
 ## Author
 
 Du Yixian
